@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Snake Game</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="score-container">
+			<div class="score">
+				<b
+					>S<span>c</span>or<span>e</span>:
+					<span id="score">0</span></b
+				>
+			</div>
+		</div>
+
+		<div class="speed-container">
+			<p>Vitesse <span id="speed">0</span></p>
+		</div>
+		<div class="game-container">
+			<canvas id="gameCanvas" width="600" height="600"></canvas>
+			<div id="game-controls" class="game-controls">
+				<button onclick="play()" id="play">Play</button>
+				<button onclick="restart()" id="restart" class="hidden">
+					Restart
+				</button>
+			</div>
+		</div>
+
+		<div id="bonus" class="bonus-container hidden">
+			<div id="bonus-list" class="bonus-list"></div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
